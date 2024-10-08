@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Mascotas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('poodle.png'); /* Reemplaza con la ruta de tu imagen */
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #3a9c3a;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #328f32;
+        }
+    </style>
+</head>
+<body>
+    <h1>Buscar Mascotas en Colombia</h1>
+    <form>
+        <label for="raza">Raza:</label>
+        <select id="raza" name="raza">
+            <option value="">Seleccione una raza</option>
+            <option value="perro">Perro callejero</option>
+            <option value="gato">labrador</option>
+            <option value="loro">Beagle</option>
+            <option value="gato">sabueso fino colombiano</option>
+            <option value="loro">chihuahua</option>
+            <!-- Agrega más razas según sea necesario -->
+        </select>
+        
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color" placeholder="Ej. Blanco, Marrón">
+        
+        <label for="edad">Edad:</label>
+        <select id="edad" name="edad">
+            <option value="">Seleccione una edad</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="adulto">Adulto</option>
+            <option value="senior">Senior</option>
+        </select>
+        
+        <label for="ubicacion">Ubicación:</label>
+        <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. Bogotá, Medellín">
+        
+        <button type="submit">Buscar Mascotas</button>
+    </form>
+</body>
+</html>

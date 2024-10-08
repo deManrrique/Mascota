@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Favoritos</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d1f2e5; /* Fondo verde pastel */
+            position: relative; /* Para el posicionamiento de la imagen */
+        }
+
+        
+
+        .alert-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            text-align: center;
+            z-index: 1; /* Coloca el contenedor por encima de la imagen */
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #333; /* Color del texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container"></div> <!-- Contenedor para la imagen -->
+    <div class="alert-container">
+        <h2>Aún no has guardado mascotas en la sección de favoritos.</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.zoom-card {
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Transición suave para el borde también */
+    border: 2px solid #e8dace; /* Color inicial del borde */
+}
+
+.zoom-card:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+    border-color: #2c6e49; /* Cambia el color del borde a verde oscuro */
+}
+
+.zoom-image {
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.zoom-image:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
